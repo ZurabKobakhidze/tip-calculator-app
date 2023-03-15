@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+body {
+  background-image: url(./images/logo.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #c5e4e7;
+  background-position-x: center;
+  background-position-y: 50px;
+  padding-top: 144px;
+  justify-content: flex-start;
+}
+
+.header_div {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+  border-radius: 25px 25px 0px 0px;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.header_box1 {
+  padding-bottom: 32px;
+}
+
+.h2_bill {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5e7a7d;
+}
+
+.input_box_1 {
+  background: #f3f9fa;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 17px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  margin-top: 6px;
+  gap: 30px;
+}
+
+.ipnut_first {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: right;
+  color: #00474b;
+  mix-blend-mode: normal;
+  border: none;
+  width: 100%;
+  background: none;
+}
+
+.ipnut_first::placeholder {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: right;
+  color: #00474b;
+  mix-blend-mode: normal;
+  opacity: 0.35;
+}
+
+.ipnut_first:focus {
+  outline: none;
+}
+
+.h2_tip {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5e7a7d;
+  margin-top: 32px;
+}
+
+.greenButton {
+  background: #00474b;
+  border-radius: 5px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  height: 48px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.greenButton:hover {
+  color: #00474b;
+  background: #26c2ae;
+  border-radius: 5px;
+  transition: ease 0.4s;
+}
+
+.buttons_box {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 16px;
+  margin-top: 16px;
+  width: calc(100% - 30px);
+}
+
+.button_input {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: right;
+  color: #00474b;
+  border: none;
+}
+
+.button_input:focus {
+  background: #f3f9fa;
+  outline: 2px solid #26c2ae;
+  border-radius: 5px;
+  border: none;
+}
+
+.button_input::placeholder {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #547878;
+  text-align: center;
+  text-indent: 30px;
+}
+
+.h2_numberPeople {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5e7a7d;
+  margin-top: 32px;
+}
+
+.header_box2 {
+  padding-top: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  background: #00474b;
+  border-radius: 15px;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.h2_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.h2 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.person {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+  color: #7f9d9f;
+}
+
+.result {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 47px;
+  text-align: right;
+  letter-spacing: -0.666667px;
+  color: #26c2ae;
+}
+
+.reset {
+  height: 48px;
+  background: #0d686d;
+  border-radius: 5px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #00474b;
+  mix-blend-mode: normal;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background: #26c2ae;
+  border-radius: 5px;
+  color: #00474b;
+  transition: ease 0.4s;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    box-sizing: border-box;
+    padding-top: 304px;
+    background-position-y: 163px;
+  }
+
+  .header_div {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    justify-content: center;
+    width: 100%;
+    padding: 32px;
+    box-sizing: border-box;
+    background: #ffffff;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px;
+    width: 920px;
+    align-items: center;
+  }
+
+  .header_box1 {
+    padding-bottom: 0;
+    padding-bottom: 12px;
+    width: 379px;
+  }
+
+  .input_box_1{
+    height: 48px;
+  }
+
+  .h2_tip {
+    margin-top: 40px;
+  }
+
+  .h2_numberPeople{
+    margin-top: 40px;
+  }
+
+  .header_box2 {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    width: 413px;
+    box-sizing: border-box;
+  }
+
+  .buttons_box {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 16px 14px;
+    margin-top: 16px;
+    width: calc(100% - 28px);
+  }
+
+  .button_input::placeholder {
+    text-indent: 0;
+  }
+
+  .result {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    text-align: right;
+    letter-spacing: -1px;
+    color: #26c2ae;
+  }
+
+  .reset {
+    margin-top: 97px;
+  }
+}
