@@ -28,10 +28,16 @@
               fill="#9EBBBD"
             />
           </svg>
-          <input class="ipnut_first" type="text" value="" placeholder="0" />
+          <input
+            class="ipnut_first"
+            id="billAmounts"
+            type="text"
+            value=""
+            placeholder="0"
+          />
         </div>
         <h2 class="h2_tip">Select Tip %</h2>
-        <div class="buttons_box">
+        <div class="buttons_box" id="services">
           <button class="greenButton 5%">5%</button>
           <button class="greenButton 10%">10%</button>
           <button class="greenButton 15%">15%</button>
@@ -39,13 +45,18 @@
           <button class="greenButton 50%">50%</button>
           <input
             class="button_input"
+            id="tip-custom"
             type="text"
             type="text"
             placeholder="Custom"
           />
         </div>
-        <h2 class="h2_numberPeople">Number of People</h2>
-        <div class="input_box_1">
+        <div class="h2_box_hidden">
+          <h2 class="h2_numberPeople">Number of People</h2>
+          <h2 class="h2_no_zero">Can’t be zero</h2>
+        </div>
+
+        <div class="input_box_1" id="numberOfPeople">
           <svg
             class="person_icon"
             width="13"
@@ -63,7 +74,13 @@
               fill="#9EBBBD"
             />
           </svg>
-          <input class="ipnut_first" type="text" value="" placeholder="0" />
+          <input
+            class="ipnut_first"
+            id="people-amount"
+            type="text"
+            value=""
+            placeholder="0"
+          />
         </div>
       </div>
       <div class="header_box2">
@@ -72,16 +89,16 @@
             <h2 class="h2 tip_Amount">Tip Amount</h2>
             <h3 class="person">/ person</h3>
           </div>
-          <span class="result">$0.00</span>
+          <span class="result" id="tip-per-person">$0.00</span>
         </div>
         <div class="h2_box">
           <div class="h2_info">
             <h2 class="h2 total">Total</h2>
             <h3 class="person">/ person</h3>
           </div>
-          <span class="result" id="total-per-person" >$0.00</span>
+          <span class="result" id="total-per-person">$0.00</span>
         </div>
-        <button class="reset">RESET</button>
+        <button id="reset" class="reset-button">RESET</button>
       </div>
     </header>
     <script src="script.js"></script>
