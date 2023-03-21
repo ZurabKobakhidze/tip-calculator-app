@@ -175,6 +175,12 @@ body {
   line-height: 24px;
   text-align: right;
   color: #e17457;
+  display: none;
+}
+
+.h2_no_zero_active{
+  display: block;
+  
 }
 
 .h2_numberPeople {
@@ -252,14 +258,14 @@ body {
 }
 
 .reset-button:hover {
-  background: #26c2ae;
+  background: #9fe8df;
   border-radius: 5px;
   color: #00474b;
   transition: ease 0.4s;
 }
 
 .reset-button-active{
-  background: #9fe8df;
+  background: #26c2ae;
   border-radius: 5px;
   transition: ease 0.4s;
 }
