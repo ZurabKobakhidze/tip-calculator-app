@@ -12,6 +12,8 @@ const errorBorder = document.querySelector("#numberOfPeople");
 
 let percent = 0;
 
+
+
 function calculateTip() {
   if (billAmount.value && peopleNumber.value && percent > 0) {
     const tipAmount = billAmount.value * (percent / 100);
@@ -32,7 +34,26 @@ function calculateTip() {
     totalPerPerson.innerHTML = "0.00";
     tipPerPerson.innerHTML = "0.00";
   }
+
+  let billValue = parseFloat(billAmount.value);
+    if (billValue > 10000) {
+      billValue = 10000;
+      billAmount.value = "10000";
+    }
+
+  let maxPeopleAmount = parseFloat(peopleNumber.value);
+    if (maxPeopleAmount > 100) {
+      maxPeopleAmount = 100;
+      peopleNumber.value = "100"
+    }
+
+  
 }
+
+
+
+
+
 
 billAmount.addEventListener("input", function () {
   activeBorder.style.border = "2px solid #26C2AE";
